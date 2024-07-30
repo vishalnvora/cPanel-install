@@ -193,13 +193,13 @@ def main():
     num_threads = args.thread
 
     try:
-        with open(url_filename) as f:
+        with open(url_filename, encoding='utf-8') as f:
             urls = [line.strip() for line in f]
 
-        with open(username_filepath, "r") as file:
+        with open(username_filepath, "r", encoding='utf-8') as file:
             usernames = [line.strip() for line in file]
 
-        with open(password_filepath, "r") as file:
+        with open(password_filepath, "r", encoding='utf-8') as file:
             password = file.read().strip()
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
