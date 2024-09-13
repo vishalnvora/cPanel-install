@@ -7,7 +7,7 @@
 - Wingays
 ## Get start with
 ```
-$ git clone [https://github.com/vishalnvora/cPanel-install]
+$ git clone https://github.com/vishalnvora/cPanel-install
 $ cd cPanel-install
 $ pip/pip3 install -r requirements.txt
 $ python/python3 cPanel.py
